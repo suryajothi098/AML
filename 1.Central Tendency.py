@@ -1,12 +1,9 @@
 import pandas as pd
 
-# Load the dataset
-df = pd.read_csv("‪Iris.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/sara3691/ml/main/student_dataset.csv")
 
-# Select only numerical columns
 num = df.select_dtypes(include='number')
 
-# Compute statistical measures
 print("Mean:")
 print(num.mean())
 
